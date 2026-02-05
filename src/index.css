@@ -1,0 +1,102 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+The @apply directive should not be used with the group utility class.
+*/
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 222.2 84% 4.9%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 222.2 84% 4.9%;
+ 
+    --popover: 0 0% 100%;
+    --popover-foreground: 222.2 84% 4.9%;
+ 
+    --primary: 221.2 83.2% 53.3%;
+    --primary-foreground: 210 20% 98%;
+ 
+    --secondary: 210 40% 96.1%;
+    --secondary-foreground: 222.2 47.4% 11.2%;
+ 
+    --muted: 210 40% 96.1%;
+    --muted-foreground: 215.4 16.3% 46.9%;
+ 
+    --accent: 210 40% 96.1%;
+    --accent-foreground: 222.2 47.4% 11.2%;
+ 
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 20% 98%;
+
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+    --ring: 222.2 84% 4.9%;
+ 
+    --radius: 0.5rem;
+
+    /* Custom Grocery App Colors */
+    --grocery-background: 0 0% 100%; /* White */
+    --grocery-foreground: 220 20% 20%; /* Dark Gray */
+    --grocery-card: 0 0% 100%; /* White */
+    --grocery-card-foreground: 220 20% 20%; /* Dark Gray */
+    --grocery-button: 0 70% 50%; /* Red */
+    --grocery-button-foreground: 0 0% 100%; /* White */
+    --grocery-completed: 142 60% 85%; /* Light Green for completed items */
+    --grocery-completed-foreground: 220 20% 30%; /* Darker Green text */
+    --grocery-delete: 0 70% 60%; /* Red */
+    --grocery-delete-foreground: 0 0% 100%; /* White */
+  }
+
+  .dark {
+    --background: 220 20% 10%; /* Darker Blue-Gray */
+    --foreground: 210 20% 90%; /* Light Gray */
+ 
+    --card: 220 20% 15%; /* Dark Gray */
+    --card-foreground: 210 20% 90%; /* Light Gray */
+ 
+    --popover: 222.2 84% 4.9%;
+    --popover-foreground: 210 20% 98%;
+ 
+    --primary: 217.2 91.2% 59.8%;
+    --primary-foreground: 222.2 47.4% 11.2%;
+ 
+    --secondary: 217.2 32.4% 16.7%;
+    --secondary-foreground: 210 20% 98%;
+ 
+    --muted: 217.2 32.4% 16.7%;
+    --muted-foreground: 215 20.4% 65.2%;
+ 
+    --accent: 217.2 32.4% 16.7%;
+    --accent-foreground: 210 20% 98%;
+ 
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 20% 98%;
+ 
+    --border: 217.2 32.4% 16.7%;
+    --input: 217.2 32.4% 16.7%;
+    --ring: 212.7 26.8% 83.9%;
+
+    /* Custom Grocery App Colors for Dark Mode */
+    --grocery-background: 220 20% 10%; /* Darker background */
+    --grocery-foreground: 210 20% 90%; /* Light text */
+    --grocery-card: 220 20% 15%; /* Dark card background */
+    --grocery-card-foreground: 210 20% 90%; /* Light card text */
+    --grocery-button: 0 70% 40%; /* Darker Red button */
+    --grocery-button-foreground: 0 0% 100%; /* White button text */
+    --grocery-completed: 142 60% 30%; /* Dark Green for completed items */
+    --grocery-completed-foreground: 210 20% 80%; /* Lighter Green text */
+    --grocery-delete: 0 70% 50%; /* Darker Red delete button */
+    --grocery-delete-foreground: 0 0% 100%; /* White delete button text */
+  }
+
+  body {
+    font-family: var(--font-sans);
+    background-color: hsl(var(--grocery-background));
+    color: hsl(var(--grocery-foreground));
+  }
+}
